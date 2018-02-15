@@ -1,3 +1,14 @@
-header { font-family: Helvetica, sans-serif; }
-.subtitle { color:#387894 }
-#masthead { text-align: center; }
+header {
+  font-family: Helvetica, sans-serif;
+}
+.subtitle {
+  color:#387894
+}
+#masthead {
+   text-align: center;
+}
+
+.thumbnail {
+  width: 150px;
+  height: 100px;
+}
