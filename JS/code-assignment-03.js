@@ -8,7 +8,7 @@ let projectMapExtent = [48.51, -28.37, 2.63, -132.34]
 
 // display messages in the browser's developer console, combining the values with text
 console.log('ID: ' + projectId)
-console.log('URL: ' + projectUrl)
+console.log('Url: ' + projectUrl)
 console.log('Title: ' + projectTitle)
 console.log('Description: ' + projectDesc)
 console.log('Has thumbnail? ' + projectThumb)
