@@ -17,3 +17,10 @@ header {
   width: 300px;
   height: 300px;
 }
+
+/* Display article thumbnails and descriptions side by side in a grid */
+article {
+  display: grid;
+  grid: "img meta" auto / 200px auto;
+  margin-bottom: 20px;
+}
