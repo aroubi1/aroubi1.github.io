@@ -16,3 +16,11 @@ marker.bindPopup('Roubion, France')
 ACRmap.on('click', function (event) {
   console.log('You clicked the map at ' + event.latlng)
 })
+
+var latlngs = [
+    [44.100328, 7.023049],
+    [44.093301, 7.025924],
+    [44.088955, 7.038370],
+    [44.095766, 7.055751]
+];
+var polyline = L.polyline(latlngs, {color: 'green'}).addTo(ACRmap)
