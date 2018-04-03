@@ -11,7 +11,8 @@ let marker = L.marker([44.092287, 7.050693], {icon: myicon}).addTo(ACRmap)
 
 let myPolygonStyle = {
   color: 'brown',
-  fillColor: 'blue'
+  fillColor: 'blue',
+  fillOpacity: 0.3
 }
 
 let polygonCoords = [
