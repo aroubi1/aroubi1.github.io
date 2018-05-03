@@ -1,6 +1,14 @@
 let ACRmap = L.map('MAP').setView([39.330725, -100.686089], 4)
+let Map1 = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}').addTo(ACRmap)
+let Map2 = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png')
+let Map3 = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}')
 
-L.tileLayer('https://korona.geog.uni-heidelberg.de/tiles/roads/x={x}&y={y}&z={z}').addTo(ACRmap)
+let Basemaps = {
+  'State Basemap': Map1,
+  'Landscape Map': Map2,
+  'Satallite Map': Map3
+}
+
 
 geojsonStyle = function (cities) {
   let Name = cities.properties.Name
@@ -35,3 +43,4 @@ let myLayerOptions = {
 }
 
 L.geoJSON(IDdata, myLayerOptions).addTo(ACRmap)
+L.control.layers(Basemaps).addTo(ACRmap)

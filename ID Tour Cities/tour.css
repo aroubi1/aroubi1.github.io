@@ -19,3 +19,9 @@ header {
 }
 
 #MAP { height: 500px}
+
+article {
+  display: grid;
+  grid: "img meta" auto / 25px auto;
+  margin-bottom: 20px;
+}
